@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Financial Adviser</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header-main-div">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+        <div class="header-logo-div">
+            <a class="navbar-brand" href="index.html">
+                <h5 class="header-logo-text">John Marshall</h5>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#makes-us-different">Makes Us Different</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+  </div>
+</div>
+
+
+<!-- Inner Banner -->
+<div class="inner-banner-div">
+  <div class="container">
+    <div class="inner-page-heading-div">
+      <h2>Institutions & Consultants</h2>
+    </div>
+  </div>
+</div>
+
+
+<!-- Service Contain -->
+<div class="service-contain-div common-padding">
+  <div class="container">
+    <div class="service-big-img text-center">
+      <img src="image/service-img.jpg" class="img-fluid">
+    </div>
+    <div class="service-desc-div">
+      <p class="common-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <p class="common-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <p class="common-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <p class="common-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <p class="common-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- connect-together -->
+<div class="connect-together-div common-padding common-bg">
+  <div class="container">
+    <div class="connect-heading-div text-center">
+      <a href="index.html#contact-us">
+        <h2>Let's connect together <i class="fa fa-arrow-right left-right-move" aria-hidden="true"></i></h2>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+  <div class="container">
+    <p>© 2022 John Marshall. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+<!-- Sticky Header JS -->
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 100) {
+          $(".header-main-div").addClass("sticky-header");
+      } else {
+          $(".header-main-div").removeClass("sticky-header");
+      }
+      });
+  });
+</script>

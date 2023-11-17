@@ -1,0 +1,1256 @@
+:root {
+    --common-bg: #F8F8F8;
+    --white-color: #fff;
+    --common-color: #cdaa7c;
+    --dark-color :#212529;
+    --light-grey:  #86888b;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Inter', sans-serif;
+}
+.container {
+    max-width: 1400px !important;
+}
+.common-bg {
+    background-color: var(--common-bg);
+}
+.common-btn-div .btn {
+    border: 2px solid var(--common-color);
+    color: var(--white);
+    background-color: transparent;
+    border-radius: 0px;
+    font-size: 15px;
+    padding: 10px 25px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: none;
+    text-transform: uppercase;
+}
+.common-btn-div .btn:hover {
+    background-color: var(--common-color);
+    border: 2px solid var(--common-color);
+    color: var(--white);
+}
+.common-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.comman-heading { 
+    font-size: 55px;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: var(--common-color);
+    margin-bottom: 40px;
+    background: url(../../images/heading-dark.png) no-repeat center 80px;
+    letter-spacing: 4px;
+    padding: 0 0 70px 0;
+    margin: -6px 0 0 0;
+}
+.common-para {
+    color: var(--dark-color);
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+.header-main-div:after,
+.home-banner-slider-div:after,
+.our-services-div:after,
+.our-menu-div:after,
+.book-your-table-div:after,
+.page-banner-div:after,
+.why-choose-us-div:after
+ {
+    background: rgba(0, 0, 0, 0) url(../../images/tri-promo-bottom-white.png) repeat scroll 0 0;
+    bottom: -7px;
+    content: "";
+    height: 7px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+}
+.home-banner-slider-div:after,
+.our-services-div:after,
+.our-menu-div:after,
+.book-your-table-div:after,
+.page-banner-div:after,
+.why-choose-us-div:after
+{
+    bottom: 0px!important;
+    transform: rotateX(180deg);
+    opacity: 1;
+}
+.header-main-div.sticky-header::after  {
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+.our-services-div:before,
+footer:before,
+.our-menu-div:before,
+.book-your-table-div:before,
+.why-choose-us-div:before
+ { 
+    background: rgba(0, 0, 0, 0) url(../../images/tri-promo-bottom-white.png) repeat scroll 0 0;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    top: 0; 
+}
+
+#color-overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: black;
+ opacity: 0.8;
+}
+
+.title { position: relative; }
+
+
+
+/****************************** header start *******************************/
+
+.header-main-div {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 99;
+}
+.sticky-header {
+    box-shadow: 0 3px 6px #00000026, 0 3px 6px #00000021;
+    background-color: var(--white);
+    transition: all 0.3s ease 0s;
+}
+
+/*.header-logo-text {
+    color: var(--white);
+    font-size: 32px;
+    margin-bottom: 0px;
+    letter-spacing: 1.5px;
+    font-family: 'Lobster', cursive;
+}
+.sticky-header .header-logo-text {
+    color: var(--light-black);
+}*/
+.sticky-header nav .navbar-nav .nav-item .nav-link {
+    color: var(--light-black);
+    font-weight: 500;
+}
+nav .navbar-nav .nav-item {
+    margin-left: 20px;
+}
+nav .navbar-nav .nav-item .nav-link {
+    color: var(--white);
+    font-weight: 400;
+}
+nav .navbar-nav .nav-item .nav-link:hover {
+    color: var(--common-color);
+}
+nav .navbar-nav .nav-item .nav-link.active { 
+    color: var(--common-color);
+}
+.align-center-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+ .navbar-toggler {
+        background-color: var(--common-color);
+    }
+    .navbar-toggler .navbar-toggler-icon i {
+        position: relative;
+        top: 6px;
+        color: var(--dark-color);
+    }
+/* Header CSS  End */
+
+
+/****************************************home-banner-slider-div CSS Start****************************************/
+
+.home-banner-slider-div { 
+    position: relative; 
+}
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.4);
+}
+/*.carousel-item { 
+    height: 900px; 
+}*/
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carousel-indicators li.active { 
+    background-color: var(--common-color);
+}
+.carousel-control-next, .carousel-control-prev {
+    z-index: 55;
+}
+.carousel-item img{
+    height: 100vh;
+    object-fit: cover;
+}
+
+.banner-short-text
+{
+    align-items: center;
+    position: absolute;
+    z-index: 22;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; 
+    top: 40%;
+}
+
+.banner-short-text h2 {
+    color: var(--white);
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+}
+.banner-short-text h1 { 
+    color: var(--white);
+    font-size: 55px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1.3px;
+    text-align: center;
+}
+
+/* home-banner-slider-div CSS End **/
+
+/****************************************about-us-div CSS Start****************************************/
+
+.about-us-div {
+    position: relative;
+}
+.about-fixed-img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+}
+.about-us-div .common-btn-div .btn {
+    color: var(--dark-color);
+}
+.about-us-div .common-btn-div .btn:hover {
+    color: var(--white-color);
+}
+
+/* about-us-div CSS End */
+
+/***************************************** our-services-div CSS Start *****************************************/
+
+.our-services-div { 
+    background-image: url("../../images/services-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.our-services-div .title .common-para
+{
+    color: var(--white-color);
+    padding: 0 25%;
+}
+.our-services-col {
+    color: #fff;
+    text-align: center;
+    border: 2px solid #80694d;
+    padding: 45px 21px 39px;
+    background: #cdaa7c;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.our-services-col:hover {
+    background: 0,0,0;
+}
+
+.our-services-col h4 { 
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+.our-services-col img {
+    margin-bottom: 25px;
+}
+/* our-services-div CSS End */
+
+
+/******************************************  specialist-of-the-day-div CSS Start ***************************************** */
+
+.slide-item { 
+    text-align: center; 
+}
+.star-rating i{ 
+    color: #ffe234; 
+}
+.slide-item img { 
+    display: inline!important; 
+    margin-bottom: 10px; 
+}
+.specialist-of-the-day-div .common-btn-div .btn {
+    color: var(--dark-color);
+}
+.specialist-of-the-day-div .common-btn-div .btn:hover {
+    color: var(--white-color);
+}
+.slick-dots li button:before { 
+    font-size: 40px!important;
+}
+.slick-dots {
+ bottom: -55px!important;
+}
+
+/*specialist-of-the-day-div CSS End*/
+
+/****************************************** our-menu-div CSS Start ******************************************/
+
+.our-menu-div { 
+    background: url(../../images/our-menu-bg.jpg) fixed; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.our-menu-div .menu-list  { 
+    color: var(--white-color); 
+    margin-bottom: 40px; 
+}
+.our-menu-div .menu-list a { 
+    color: var(--common-color); 
+    font-weight: bold; 
+}
+.our-menu-div .menu-list a:hover {
+    color: #a18a6b;
+}
+
+.menu-price {
+    background-color: var(--common-color);
+    display: inline-block;
+    padding: 2px 8px;
+    font-weight: 800;
+    min-width: 65px;
+    text-align: center;
+}
+.menu-list-img img {
+    width: 110px;
+    height: 110px;
+    margin-right: 25px;
+    border: 1px solid var(--common-color);
+}
+
+/*our-menu-div CSS End*/
+
+/*************************************** our-chefs CSS Start ***************************************/
+
+.our-chefs-div .infobox { 
+    text-align: center; 
+    color: var(--white-color);  
+}
+.our-chefs-div .infobox h5 { 
+    font-family: 'Dancing Script', cursive; 
+    font-size: 28px; 
+    line-height: 40px; 
+}
+.our-chefs-div .infobox h4 { 
+    text-transform: uppercase; 
+}
+.social-icons ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+.our-chefs-div .social-icons ul li {  
+    display: inline; 
+    margin: 4px; 
+}
+.infobox { 
+    border: 1px solid #e7e7e7; 
+    padding: 10px; 
+    background-color: var(--common-color); 
+}
+.infobox-details { 
+    margin: 15px 0; 
+}
+.our-chefs-div .social-icons .fa {
+    height: 31px;
+    width: 34px;
+    border: 2px solid;
+    padding: 5px;
+}
+.our-chefs-div .social-icons li a  { 
+    font-size: unset; 
+}
+
+/*our-chefs CSS End*/
+
+
+/***************************************** *book-your-table CSS Start ******************************************/
+
+.book-your-table-div { 
+    background:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url("../../images/book-your-table-bg.jpg") fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.book-your-table-div:before {
+    z-index: 2;
+}
+.reservation-table-form{ 
+    background-color: rgba(0, 0, 0, 0.58);
+    height: 100%;
+    padding: 100px 40px 100px;
+}
+.reservation-table-form .form-group {
+    margin-bottom: 25px;
+    width: 47%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.reservation-table-form .form-group input {
+    background: transparent;
+    border: 1px solid #fff;
+}
+.reservation-table-form .form-group input::placeholder {
+    color: #fff!important;
+}
+.reservation-table-form .form-group .form-control:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+.reservation-table-form form {
+    display: flex;
+    flex-wrap: wrap;
+}
+#clock { 
+    position: relative; 
+    background-image: url("../../images/clock.png"); 
+    width: 280px;
+    height: 280px;
+    background-repeat: no-repeat;
+    top: 23%;
+    margin: 160px auto;
+    list-style: none;
+}
+
+#hour, 
+#minute, 
+#sec {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*transform: rotate(180deg);*/
+}  
+#hour {
+  background-image: url("../../images/hour.png");
+  z-index: 1;
+}
+#minute {
+  background-image: url("../../images/minute.png");
+  z-index: 2;
+}
+#sec {
+  background-image: url("../../images/sec.png");
+  z-index: 3;
+}
+
+.reservation-table-form .form-control {
+    color: #fff!important;
+}
+
+
+/*book-your-table CSS End*/
+
+
+/**************************************** testimonial CSS Start ****************************************/
+
+.testimonial-item { background-color: var(--common-color); padding: 20px; }
+/*.testimonial-slider-items {
+    margin: 0 10px; 
+}*/
+.testimonial-slider .slick-slide {
+  transform: scale(0.9);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  opacity: 0.65;
+  transition: transform 0.5s;
+}
+.testimonial-slider .slick-slide.slick-center {
+  transform: scale(1);
+  opacity: 1.0;
+  transition: transform 0.5s;
+}
+.testimonial-slider .slick-list.draggable {
+    padding: 0!important;
+}
+.user-info p {
+    margin-bottom: 10px!important;
+}
+
+/*testimonial CSS End*/
+
+/***************************************** Footer CSS Start *****************************************/
+
+footer {
+    background-image:url("../../images/footer_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+footer:before { 
+    z-index: 1; 
+}
+.footer-bottom { 
+    padding: 30px 0; 
+}
+.footer-bottom .common-para { 
+    margin: 0; 
+}
+.social-icons { 
+    margin-top: 20px; 
+}
+footer ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;  
+}
+footer li { 
+    display: inline; 
+    margin: 10px; 
+}
+.social-icons li a { 
+    font-size: 24px; 
+    color: var(--white-color); 
+}
+footer a:hover { 
+    text-decoration: none; 
+    color: var(--common-color);
+}
+.footer-bottom { 
+    border-top: 1px solid var(--light-grey); 
+    padding: 20px 0; 
+}
+.footer-bottom a { 
+    color: var(--white-color); 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+    color: var(--common-color);
+}
+footer a {
+    color: var(--white-color);
+}
+.footer-copyright a { 
+    color: var(--common-color); 
+}
+
+/* Footer CSS End */
+
+
+/************************************************************ Menu Page CSS *********************************************************************************/
+
+
+.banner-title h1 { 
+    font-size: 65px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: var(--common-color);
+    text-align: center;
+    position: relative;
+    background: url(../../images/heading-dark.png) no-repeat center 100px;
+    padding: 0px 0 70px 0;
+    margin: 0px 0px 0 0;
+}
+
+/************************ page-banner-div CSS Start ***********************/
+
+.page-banner-div { 
+    background-image: url("../../images/page-banner-bg.jpg"); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+    position: relative;
+}
+.page-banner-div:before {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: rgb(0 0 0 / 30%);
+}
+
+/*page-banner-div CSS End*/
+
+
+/************************** our-menu-list-div CSS Start ******************/
+
+.our-menu-list-div  {   
+    position: relative;
+    background-image: url("../../images/home_three_about_bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.our-menu-list-div .common-btn-div .btn {
+    color: var(--dark-color);
+}
+.our-menu-list-div .common-btn-div .btn:hover {
+    color: var(--white-color);
+}
+.nav.nav-tabs {
+    margin-bottom: 70px;
+}
+.list-menus {
+    margin-bottom: 50px;
+}
+.list-menus img { 
+    width: 180px; 
+    height: 180px; 
+}
+
+.nav-tabs {
+    border: none;
+    justify-content: center;
+}
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    border: none!important;
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+}
+.nav-tabs .nav-item .nav-link {
+    font-size: 20px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color)!important;
+    margin: 0 5px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    border: 1px solid var(--common-color)!important;
+    background-color: var(--common-color);
+}
+.nav-tabs .nav-item .nav-link:hover {
+    color: #ffffff;
+    border: 1px solid var(--common-color)!important;
+    background-color: var(--common-color);
+    transition: all 0.3s ease 0s;
+}
+
+
+/*our-menu-list-div CSS End*/
+
+
+/************************* restaurant-service CSS Start ***********************/
+
+.our-chefs-div.menu-page {
+    background-image: url("../../images/our-menu-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/*restaurant-service CSS End*/
+
+
+
+
+/************************************************************ Gallary Page CSS *********************************************************************************/
+
+
+/************************** gallary-items-div css start ******************/
+
+.gallary-img img:hover {
+    opacity: 0.8;
+    transition: .4s;
+}
+.gallary-img {
+    margin-bottom: 20px;
+}
+
+
+
+/************************************************************ About Us Page CSS *********************************************************************************/
+
+/**************************** our-mission-div CSS start *********************************/
+
+.our-mission-div .icon-list-items ul{
+    list-style: none; 
+    padding: 0;
+}
+.our-mission-div .icon-list-items li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 22px;
+}
+.our-mission-div .icon-list-items li i {
+    margin-right: 8px;
+}
+.icon-list-items ul li:before {
+    content: '\f05d ';
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    margin-right: 20px;
+}
+
+/*our-mission-div css end*/
+
+/*************************** why-choose-us-div css Start ***********************************/
+
+.why-choose-us-div {
+    background: url("../../images/why-choose-us-div-bg.jpg") fixed;
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.why-choose-us-div .title .common-para {  
+    padding: 0 20%;
+}
+
+.why-choose-us-div:before{
+    z-index: 2;
+}
+
+.why-choose-us-div .icon-box i.fa {
+    font-size: 80px;
+    margin-bottom: 15px;
+    color: var(--common-color);
+}
+.why-choose-us-div .icon-box h5 {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+
+
+/*why-choose-us-div css end*/
+
+/*************************************************************************** Contact Us Page CSS ************************************************************/
+
+/************** contact-us-table-div css Start **************/
+
+.contact-us-table-div .reservation-table-form .title h3{
+    font-size: 45px!important;
+    margin-bottom: 30px;
+}
+
+.contact-us-table-div .reservation-table-form {
+    background-color: rgb(255 255 255 / 58%);
+}
+.contact-us-table-div .common-btn-div .btn {
+    color: var(--dark-color);
+}
+.contact-us-table-div .common-btn-div .btn:hover {
+    color: var(--white-color);
+}
+.contact-us-table-div .form-group {
+    margin-bottom: 25px;
+    width: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.contact-us-table-div .form-group input {
+    background: transparent;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    font-size: 22px;
+    padding: 0;
+}
+.contact-us-table-div .form-group input::placeholder {
+    color: #000!important;
+}
+.contact-us-table-div .form-group .form-control:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+.contact-us-table-div form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.reservation-table-form .form-control {
+    color: #000!important;
+}
+.reservation-table-form .input-group-append .input-group-text {
+    border: 1px solid #000;
+}
+
+
+
+
+/*********************************************************************** - Responsive CSS - *******************************************************************/
+
+@media only screen and (max-width: 349px) {
+
+    .banner-title h1 {
+        background: url(../../images/heading-dark.png) no-repeat center 120px!important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        max-width: 540px !important;
+    }
+    .common-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .common-btn-div .btn {
+    	font-size: 14px;
+    	padding: 10px 25px;
+    }
+    .common-heading-text {
+    	font-size: 30px;
+    }
+    .comman-heading {
+        font-size: 40px;
+    }
+    .common-small-text {
+    	font-size: 16px;
+    }
+    .common-heading-div {
+    	margin-bottom: 30px;
+    }
+    .column-reverse {
+    	flex-direction: column-reverse;
+    }
+
+    /*--- Header Start CSS ---*/
+    .header-main-div .navbar {
+        padding: 0.5rem 0rem;
+    }
+    .header-main-div .navbar-nav {
+        background-color: var(--white);
+    }
+    nav .navbar-nav .nav-item .nav-link {
+        color: var(--black-color);
+    }
+    
+    .navbar-toggler .navbar-toggler-icon i {
+        position: relative;
+        top: 6px;
+        color: var(--white);
+    }
+    nav .navbar-nav .nav-item {
+        margin-left: 0px;
+        border-bottom: 1px solid var(--gray-color);
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    /***************************************** Header End CSS *****************************************/
+
+    /*home-banner-slider-div CSS Start*/
+
+    .banner-short-text h2 {
+        font-size: 55px;
+    }
+    .banner-short-text h1 { 
+        font-size: 35px;        
+    }
+    .banner-short-text {
+        top: 30%;
+    }
+   /* .carousel-item { height: 500px; }
+    .carousel-item  img { height: 100%; width: auto!important; }*/
+
+    .carousel-control-next, .carousel-control-prev { 
+        display: none; 
+    }
+
+    .carousel-item img {
+        height: 70vh;
+        object-fit: cover;
+    }
+
+    /* home-banner-slider-div CSS End */
+
+    /**************************************** about-us-div CSS Start ****************************************/
+    .about-img { 
+       margin-top: 30px;
+   }
+   /* about-us-div CSS End */
+
+   /***************************************** our-services-div CSS Start *****************************************/
+
+   .our-services-col  { 
+        margin-bottom: 15px; 
+    }
+   .our-services-div .title .common-para { 
+        padding: 0; 
+    }
+
+   /* our-services-div CSS End */
+
+   /****************************************** our-menu-div CSS Start ******************************************/
+
+   .menu-list {
+        display: block!important;
+        text-align: center;
+    }
+    .menu-list-img img { 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+    /*our-menu-div CSS end*/
+
+    /***************************************** book-your-table-div CSS Start *****************************************/
+
+    .reservation-table-form .form-group {
+        width: 100%; 
+    }  
+    #clock {
+        margin: 100px auto;
+    }
+
+    /*book-your-table-div CSS end*/
+
+    /***************************************** footer CSS Start *****************************************/     
+    footer li {
+        margin: 5px;
+    }
+    .footer-copyright { 
+        text-align: center!important;
+        margin-top: 15px;
+    } 
+
+    /* footer CSS End */   
+
+}
+@media only screen and (max-width: 575px) {
+
+    /*specialist-of-the-day-div Css Start*/
+
+    .specialist-of-the-day-div .comman-heading {
+        background: url(../../images/heading-dark.png) no-repeat center 120px;
+    }
+
+    /*book-your-table-div CSS Start*/
+
+    .reservation-table-form .comman-heading { 
+        background: url(../../images/heading-dark.png) no-repeat center 70px;
+        font-size: 35px;
+    }
+    .reservation-table-form { padding:70px 18px 70px; }
+
+    /*testimonial-slider CSS*/
+
+    .testimonial-slider .slick-slide { opacity: 1; }
+
+    /*********************** page-banner-div css start ********************/
+    .banner-title h1 {
+        font-size: 45px;
+        background: url(../../images/heading-dark.png) no-repeat center 70px;
+        padding: 0px 0 50px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /*our-menu-list-div css start*/
+    .our-menu-list-div .nav-tabs li {
+        margin-bottom: 10px;
+    }
+
+    /**************************** our-mission-div CSS start *********************************/
+    .our-mission-div .title {        
+        margin-bottom: 25px!important; 
+    }
+
+    /**************************** why-choose-us-div CSS start *********************************/
+    .why-choose-us-div .icon-box{
+        margin-bottom: 40px;
+    }
+
+    /****************** partners-div css Start *********************/
+    .partners-div .partner-img {
+        margin-bottom: 20px;
+    }   
+
+
+   /***************** restaurant-service-div css start *********************/
+   .restaurant-service .col-md-4.col-lg-4.col-xl-4:nth-child(2) {
+        margin-bottom: 40px;
+   }
+
+   /*contact-us-table-div css*/
+    .reservation-table-form {
+        padding: 50px 0px 50px;
+    }
+
+    .contact-us-table-div .reservation-table-form {
+        margin-bottom: 25px;
+    }
+
+} 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 750px !important;
+    }
+    .common-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .common-heading-text {
+    	font-size: 34px;
+    }
+    .common-heading-div {
+       margin-bottom: 30px;
+   }
+   .comman-heading { 
+        font-size: 45px;
+    }
+/***************************************** Header Start CSS *****************************************/
+   
+    .header-main-div .navbar-nav {
+        background-color: var(--white);
+    }
+    nav .navbar-nav .nav-item .nav-link {
+        color: var(--black-color);
+    }
+    nav .navbar-nav .nav-item {
+        margin-left: 0px;
+        border-bottom: 1px solid var(--gray-color);
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+/* Header End CSS */
+
+/*****************************************home-banner-slider-div CSS Start*****************************************/
+
+    .banner-short-text h2 {
+        font-size: 55px;
+    }
+    .banner-short-text h1 { 
+        font-size: 35px;        
+    }
+    .banner-short-text {
+        top: 30%;
+    }
+    .carousel-item img {
+        height: 70vh;
+        object-fit: cover;
+    }
+
+    /* home-banner-slider-div CSS End */
+
+    /***************************************** our-services-div CSS Start *****************************************/
+
+    .our-services-col  { 
+        margin-bottom: 15px; 
+    }
+    .our-services-div .title .common-para { 
+        padding: 0; 
+    }
+
+    /* our-services-div CSS End */
+
+    /************************ book-your-table-div Css Start ************************/
+
+    .reservation-table-form .form-group {
+        width: 100%; 
+    }
+    .reservation-table-form .comman-heading { 
+        background: url(../../images/heading-dark.png) no-repeat center 130px;
+    }
+
+    /*book-your-table-div Css End*/
+
+}
+@media only screen and (max-width: 991px) {
+
+    /*********************** our-chefs-div CSS Start *****************************/
+
+    .our-chefs-div .infobox {  
+        margin-bottom: 20px; 
+    }
+
+    .our-chefs-div .infobox h4 {
+        font-size: 22px;
+    }
+
+    /*our-chefs-div CSS End*/
+
+    /************************** our-menu-list-div CSS Start ******************/
+    .nav-tabs .nav-item .nav-link {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+     /**************************** our-mission-div CSS start *********************************/
+    .our-mission-div .col-lg-6.col-md-12:nth-child(2) { 
+        margin-top: 25px;
+    }
+
+    /**************************** why-choose-us-div CSS start *********************************/
+
+    .why-choose-us-div .title .common-para {  
+        padding: 0;
+    }
+
+    .why-choose-us-div .icon-box i.fa {
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+
+    /*contact-us-table-div css*/
+    .reservation-table-form {
+        padding: 50px 40px 50px;
+    }
+    /*.contact-us-table-div css*/
+    
+    .contact-us-table-div .reservation-table-form .title h3 {
+        font-size: 30px!important;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .container {
+        max-width: 960px !important;
+    }
+    .common-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .common-heading-div {
+    	margin-bottom: 35px;
+    }
+    .comman-heading {
+        font-size: 45px;
+    }
+    /***************************************** Header css start *****************************************/
+    .header-logo-text {
+    	font-size: 24px;
+    	letter-spacing: 0.5px;
+    }
+    nav .navbar-nav .nav-item {
+       margin-left: 10px;
+   }
+   /* Header css end */
+
+   .banner-short-text {
+        top: 30%;
+    }
+    .carousel-item img {
+        height: 80vh;
+        object-fit: cover;
+    }
+    .banner-short-text h2 {
+        font-size: 70px;
+    }
+    .banner-short-text h1 {
+        font-size: 45px;
+    }
+
+    /***************************************** our-services-div CSS Start *****************************************/ 
+
+    .our-services-col  { 
+        margin-bottom: 15px; 
+    }
+    .our-services-div .title .common-para { 
+        padding: 0 15%; 
+    }
+
+    /* our-services-div CSS End */
+
+    /***************************************** book-your-table-div CSS start **************************************** */
+
+    .reservation-table-form .comman-heading {  
+        font-size: 45px; 
+    }
+
+    /***************** our-chefs-div css start ******************/
+    .our-chefs-div .infobox h4 {
+        font-size: 22px;
+    }
+
+    /*book-your-table-div CSS End*/
+
+    /*.contact-us-table-div css*/
+
+    .contact-us-table-div .reservation-table-form .title h3 {
+        font-size: 35px!important;
+    }
+
+}
+
+@media only screen and (max-width: 1199px){
+    .contact-us-table-div .reservation-table-form  
+    {
+         padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    .container {
+        max-width: 1140px !important;
+    }
+    .common-padding {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+}
+
+@media only screen and (min-width: 1440px) {
+
+    /****************************************** our-menu-div CSS Start ******************************************/
+
+    .our-menu-div .row { 
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* our-menu-div CSS End */
+}
+
+
+
+
